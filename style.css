@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #2a2d35;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* main card: raised */
+.box {
+  background: #2a2d35;
+  width: 350px;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 10px 10px 20px #1f2127,
+              -10px -10px 20px #353943;
+}
+
+h1 {
+  text-align: center;
+  color: #d0d4dc;
+}
+
+.top {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+/* input: pressed in (inset) */
+#taskInput {
+  flex: 1;
+  padding: 12px;
+  background: #2a2d35;
+  color: #d0d4dc;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  box-shadow: inset 5px 5px 10px #1f2127,
+              inset -5px -5px 10px #353943;
+}
+
+#taskInput::placeholder {
+  color: #7b8190;
+}
+
+/* buttons: raised, pressed in when clicked */
+#addBtn,
+.deleteBtn {
+  background: #2a2d35;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 5px 5px 10px #1f2127,
+              -5px -5px 10px #353943;
+}
+
+#addBtn {
+  color: #6c8cff;
+}
+
+.deleteBtn {
+  color: #ff6b81;
+}
+
+#addBtn:active,
+.deleteBtn:active {
+  box-shadow: inset 3px 3px 6px #1f2127,
+              inset -3px -3px 6px #353943;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* each task: raised */
+li {
+  background: #2a2d35;
+  color: #d0d4dc;
+  padding: 14px;
+  margin-bottom: 18px;
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 6px 6px 12px #1f2127,
+              -6px -6px 12px #353943;
+}
